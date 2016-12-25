@@ -1,0 +1,41 @@
+<div *ngIf="errorMsg" class="alert alert-warning" role="alert">
+			<strong>{{errorMsg}}</strong>
+		</div>
+<div *ngIf="isDataAvailable" class="container">
+	<div [hidden]="submitted">
+		<div class="page-header">
+		  <h3>Ver Pedido</h3>
+		</div>
+		<div *ngIf="msgSuccess" class="alert alert-success" role="alert">
+			<strong>{{msgSuccess}}</strong>
+		</div>
+		<form class="form-horizontal" (ngSubmit)="modificarPedido()" #pedidoForm="ngForm">
+			<div class="form-group">
+			 	<div class="col-xs-3">
+					<label for="nombre">Nombre</label>
+					<input type="text" class="form-control" id="nombre"
+					required [(ngModel)]="model.nombre" maxlength="100" name="nombre" #objetoNro="ngModel">
+				</div>
+
+				<div class="col-xs-3">
+					<label for="monto">Monto</label>
+					<input type="text" class="form-control" id="monto"
+					required [(ngModel)]="model.monto" ngModel pattern="([0-9]*[.])?[0-9]+" name="monto" #objetoNro="ngModel">
+				</div>
+		        
+				<div class="col-xs-3">
+					<label for="descuento">Descuento</label>
+					<input type="text" class="form-control" id="descuento"
+					[(ngModel)]="model.descuento" ngModel pattern="([0-9]*[.])?[0-9]+" name="descuento" #descuento="ngModel">
+			    </div>
+			</div>
+			<div class="form-group">
+				<div class="col-xs-3">
+					<button type="submit" class="btn btn-default" [disabled]="!pedidoForm.form.valid">Modificar</button>
+				</div>
+			</div>
+		</form>
+		<button class="btn btn-default" (click)="deletePedido()">Eliminar</button>
+		<button class="btn btn-default" (click)="volverHome()">Volver</button>
+	</div>
+</div>

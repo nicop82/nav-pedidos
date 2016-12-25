@@ -1,0 +1,26 @@
+.logo {
+    background-color: #562567;
+}
+
+@media (min-width: 1200px)
+#logo {
+    width: 165px;
+    height: 80px;
+}
+
+@media (min-width: 992px)
+#logo {
+    width: 150px;
+    height: 80px;
+}
+@media (min-width: 992px)
+#logo {
+    display: block;
+}
+
+#logo {
+    width: 130px;
+    height: 80px;
+    display: block;
+    padding: 14px 0 0 10px;
+}

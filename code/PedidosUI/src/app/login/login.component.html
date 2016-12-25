@@ -1,0 +1,52 @@
+<div class="container"> 
+	<div class="alert alert-warning col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+        Usuario: test<br />
+        Clave: test
+    </div>
+	<div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<div class="panel-title">Login</div>
+			</div>     
+
+			<div style="padding-top:30px" class="panel-body">
+
+				<div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+				<div style="margin-bottom: 25px" class="input-group">
+					<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+					<input class="form-control" [(ngModel)]="user.nombre" placeholder="Usuario">
+				</div>
+
+				<div style="margin-bottom: 25px" class="input-group">
+					<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+					<input type="password" class="form-control" [(ngModel)]="user.password" placeholder="Clave">
+				</div>
+
+				<div *ngIf="errorMsg" class="alert alert-warning" role="alert">
+					<strong>{{errorMsg}}</strong>
+				</div>
+
+				<div *ngIf="loadMsg" class="alert alert-success" role="alert">
+					<strong>{{loadMsg}}</strong>
+				</div>
+
+				<div class="input-group">
+					<div class="checkbox">
+						<label>
+							<input id="login-remember" type="checkbox" name="remember" value="1"> Recordar contraseña
+						</label>
+					</div>
+				</div>
+
+				<div style="margin-top:10px" class="form-group">
+					<!-- Button -->
+
+					<div class="col-sm-12 controls">
+						<a id="btn-login" (click)="login(user)" class="btn btn-primary">Ingresar</a>
+						<a id="btn-login" (click)="loadData()" class="btn btn-primary">Load Data en Cache</a>
+					</div>
+				</div>  
+			</div>                     
+		</div>  
+	</div>
+</div>

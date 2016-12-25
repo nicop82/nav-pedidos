@@ -1,0 +1,6 @@
+<div *ngIf="errorMsg" class="alert alert-warning" role="alert">
+					<strong>{{errorMsg}}</strong>
+				</div>
+<ng-table [config]="config" (tableChanged)="onChangeTable(config)" (cellClicked)="onCellClick($event)"
+	[rows]="rows" [columns]="columns">
+</ng-table>
