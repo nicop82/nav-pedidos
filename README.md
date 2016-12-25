@@ -10,7 +10,7 @@ El proyecto consiste en una UI que consume de un backend vía servicios REST (mo
 - videoNavent.mp4: Video que explica arquitectura y forma de correr el proyecto y tests. 
 - Pregunta2.pdf: responde a la pregunta 2 solicitada
 - Code/PedidosUI: projecto realizado con Angular 2. Es un ABM de pedidos que se comunica con PedidosRest por medio de servicios web REST. 
-- Code/PedidosREST: es consumido por PedidosUI y contiene una cache genérica con sus implementaciónes como as también un capa de Daos que permitirían la integración con una base de datos. 
+- Code/PedidosREST: es consumido por PedidosUI y contiene una cache genérica con sus implementaciónes como así también una capa de DAO's que permitirían la integración con una base de datos (no implementado). 
 
 ## Proyecto PedidosUI
 Proyecto realizado con Angular 2 basado en la estructura propuesta por [angular-cli](https://github.com/angular/angular-cli). Es una single-web-page responsive (Bootstrap 3).
@@ -42,7 +42,7 @@ La carpeta /dist ya está generada para ser utilizada en cualquier servidor.
 Proyecto Maven/JAVA que expone servicios (usuario y pedidos) Rest utilizando una cache genérica. 
 
 ### Para agregar a IDE
-Para agregar el projecto se debe agregar con un proyecto Maven existente y resolver sus dependencias (mvn install).
+Para agregar el projecto se debe agregar con un proyecto Maven existente y resolver sus dependencias.
 
 ### Build
 1. Instalar [maven](https://maven.apache.org/download.cgi).
@@ -51,6 +51,6 @@ Para agregar el projecto se debe agregar con un proyecto Maven existente y resol
 4. Utilizar PedidosREST/target/PedidosREST.war en cualquier servidor. Aclaración: desarrolado con un apache tomcat versión 7. 
 
 ### Tests PedidosREST
-Corren en el install del maven y correpsonden a las siguientes clases:
+Tests:
 - com.navent.service.impl.PedidoServiceTest.java
 - com.navent.service.cache.impl.GenericMemCachedTest.java
