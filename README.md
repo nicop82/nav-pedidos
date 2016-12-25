@@ -1,5 +1,5 @@
-# Video
-Ver video que explica cómo correr la aplicación en "videoNavent.mp4".
+# Video (Ver primero)
+Para comenzar: Ver video que explica cómo correr la aplicación en "videoNavent.mp4".
 
 # Proyecto de pedidos para navent
 El proyecto consiste en una UI que consume de un backend vía servicios REST (modo de conexión vía JAX-RS). El backend dispone de una cache genérica y sus implementaciones para ser un intermediario entre la base de datos. 
@@ -25,8 +25,8 @@ Proyecto realizado con Angular 2 basado en la estructura propuesta por [angular-
 > El projecto se desarrollo con la versión v4.6.2 de nodejs y 3.10.9 de npm
 
 ### Build para poner en servidor
-> También se puede generar un html y archivo javascript que puede ponerse en un servidor por medio del comando [ng build](https://github.com/angular/angular-cli#creating-a-build) desde la carpeta /PedidosUI. El comando generará en la carpeta /PedidosUI/dist los archivos html, js e imagenes de la aplicación.
-
+> También se puede generar un html y archivo javascript que puede ponerse en un servidor por medio del comando [ng build](https://github.com/angular/angular-cli#creating-a-build) desde la carpeta /PedidosUI. El comando generará en la carpeta /PedidosUI/dist los archivos html, js e imagenes de la aplicación. 
+La carpeta /dist ya está generada para ser utilizada en cualquier servidor. 
 ### Unit Test PedidosUI (herramientas: Karma - Jasmine)
 1. cd PedidosUI
 2. [ng test](https://github.com/angular/angular-cli#running-unit-tests)
