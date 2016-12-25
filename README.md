@@ -7,7 +7,8 @@ El proyecto consiste en una UI que consume de un backend vía servicios REST (mo
 # Estructura de carpetas
 - README.md
 - Arquitectura.jpg: descripción de arquitectura general del proyecto. 
-- Video explicativo. 
+- videoNavent.mp4: Video que explica arquitectura y forma de correr el proyecto y tests. 
+- Pregunta2.pdf: responde a la pregunta 2 solicitada
 - Code/PedidosUI: projecto realizado con Angular 2. Es un ABM de pedidos que se comunica con PedidosRest por medio de servicios web REST. 
 - Code/PedidosREST: es consumido por PedidosUI y contiene una cache genérica con sus implementaciónes como as también un capa de Daos que permitirían la integración con una base de datos. 
 
