@@ -27,6 +27,7 @@ Proyecto realizado con Angular 2 basado en la estructura propuesta por [angular-
 ### Build para poner en servidor
 > También se puede generar un html y archivo javascript que puede ponerse en un servidor por medio del comando [ng build](https://github.com/angular/angular-cli#creating-a-build) desde la carpeta /PedidosUI. El comando generará en la carpeta /PedidosUI/dist los archivos html, js e imagenes de la aplicación. 
 La carpeta /dist ya está generada para ser utilizada en cualquier servidor. 
+
 ### Unit Test PedidosUI (herramientas: Karma - Jasmine)
 1. cd PedidosUI
 2. [ng test](https://github.com/angular/angular-cli#running-unit-tests)
