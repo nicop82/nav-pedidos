@@ -1,5 +1,5 @@
 # Video (Ver primero)
-Para comenzar: Ver video que explica cómo correr la aplicación en "videoNavent.mp4".
+Para comenzar: Ver video que explica cómo correr la aplicación en "videoNavent.mp4" (descomprimir archivos videoNavent.mp4.7z.00x).
 
 # Proyecto de pedidos para navent
 El proyecto consiste en una UI que consume de un backend vía servicios REST (modo de conexión vía JAX-RS). El backend dispone de una cache genérica y sus implementaciones para ser un intermediario entre la base de datos. 
